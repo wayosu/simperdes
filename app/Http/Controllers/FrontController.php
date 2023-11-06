@@ -41,14 +41,19 @@ class FrontController extends Controller
     {
         // Specify the path to the file in the "public" directory.
         $filePath = public_path('uploads/peraturan-desa/file/' . $filename);
-
+        
         // Check if the file exists.
         if (file_exists($filePath)) {
             // Determine the content type based on the file extension.
             $contentType = $this->getContentType($filename);
 
-            // Return the file as a response with the appropriate content type.
-            return response()->download($filePath, $filename, ['Content-Type' => $contentType]);
+            if ($contentType == 'application/pdf') {
+                // Return the file as a response with the appropriate content type.
+                return response()->file($filePath, ['Content-Type' => $contentType]);
+            } else {
+                // Return the file as a response with the appropriate content type.
+                return response()->download($filePath, $filename, ['Content-Type' => $contentType]);
+            }
         } else {
             // Handle the case where the file doesn't exist.
             abort(404);
