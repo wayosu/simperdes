@@ -52,7 +52,7 @@
                                                                 <td>{{ $loop->iteration }}</td>
                                                                 <td>{{ $tld->judul_peraturan }}</td>
                                                                 <td>
-                                                                    <a href="{{ route('unduh', ['filename' => str_replace('uploads/peraturan-desa/file/', '', $tld->file)]) }}" class="btn btn-primary btn-sm border-0" style="background-color: #786aea;">
+                                                                    <a href="{{ route('unduh', ['filename' => str_replace('uploads/peraturan-desa/file/', '', $tld->file)]) }}" class="btn btn-primary btn-sm border-0" style="background-color: #786aea;" target="_blank">
                                                                         <i class="fa fa-download"></i> Unduh
                                                                     </a>
                                                                 </td>
@@ -148,7 +148,7 @@
                                                                     <td>{{ $index + 1 }}</td>
                                                                     <td>{{ $data['judul_peraturan'] }}</td>
                                                                     <td>
-                                                                        <a href="{{ route('unduh', ['filename' => str_replace('uploads/peraturan-desa/file/', '', $data['file'])]) }}" class="btn btn-primary btn-sm border-0" style="background-color: #4da6e7;">
+                                                                        <a href="{{ route('unduh', ['filename' => str_replace('uploads/peraturan-desa/file/', '', $data['file'])]) }}" class="btn btn-primary btn-sm border-0" style="background-color: #4da6e7;" target="_blank">
                                                                             <i class="fa fa-download"></i> Unduh
                                                                         </a>
                                                                     </td>
