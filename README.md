@@ -50,3 +50,9 @@ To finalize this everything, run the following commands on your terminal.
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
 
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+
+## Develop by
+
+- [Andy Moh. Soreang](https://github.com/andimohsoreang)
+- [Wahyu Setiawan Usman](https://github.com/wayosu)
